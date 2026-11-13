@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>The Wand Chooses</title>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head><body>
+<canvas id="bg"></canvas>
+
+<div id="s-login" class="screen center">
+  <h1>⚡ The Wand Chooses ⚡</h1>
+  <p class="sub">Catch the right numbers. Open the vault. Win your wand.</p>
+  <input id="code" class="code" placeholder="YOUR CODE" autocomplete="off">
+  <button onclick="doLogin()">🪄 Enter Hogwarts</button>
+  <div id="e1" class="err"></div>
+</div>
+
+<div id="s-game" class="screen hidden">
+  <header><div id="who"></div><div id="score">⭐ 0</div></header>
+  <div id="clue" class="clue"></div>
+  <div id="slots" class="slots"></div>
+  <div id="arena"><div id="fog"></div></div>
+</div>
+
+<div id="s-end" class="screen center hidden"><div id="endbox"></div></div>
+<div id="toast"></div>
+<script src="script.js"></script>
+</body></html>
